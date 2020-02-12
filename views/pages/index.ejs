@@ -7,13 +7,39 @@
 <body>
 
   <% include ../partials/nav.ejs %>
-<div class="jumbotron text-center">
+
+  <div class="jumbotron text-center">
   　<p>Engineer　Blog</p>
-    <h1>KENTRO DIARY</h1>
+    <h1>KENTARO DIARY</h1>
     <a type="button" class="btn btn-lg btn-default" href="#about"><span class="glyphicon glyphicon-user"></span> About Me</a>
     <a type="button" class="btn btn-lg btn-primary" href="#news"><span class="glyphicon glyphicon-star-empty"></span> News</a>
   </div>
-</div>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<!-- スライドさせる画像の設定 -->
+<div class="carousel-inner" role="listbox">
+  <div class="item active">
+    <img src="../../images/tai.JPG" alt="第1スライド"　width="10" height="20">
+  </div><!-- /.item -->
+  <div class="item">
+    <img src="../../images/NYCver2.jpg" alt="第2スライド"　width="10" height="20">
+  </div><!-- /.item -->
+  <div class="item">
+    <img src="../../images/irmi.JPG" alt="第3スライド"　width="10" height="20">
+  </div><!-- /.item -->
+</div><!-- /.carousel-inner -->
+　
+<!-- スライドコントロールの設定 -->
+<a class="left carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+ <span class="sr-only">前へ</span>
+</a>
+<a class="right carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+ <span class="sr-only">次へ</span>
+</a>
+</div><!-- /.carousel -->
+
 <div class="container text-center">
   <div class="alert alert-info text-center" role="alert">
     只今準備中
