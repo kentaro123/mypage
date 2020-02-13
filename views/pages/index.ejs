@@ -11,68 +11,107 @@
   <div class="jumbotron text-center">
   　<p>Engineer　Blog</p>
     <h1>KENTARO DIARY</h1>
-    <a type="button" class="btn btn-lg btn-default" href="#about"><span class="glyphicon glyphicon-user"></span> About Me</a>
-    <a type="button" class="btn btn-lg btn-primary" href="#news"><span class="glyphicon glyphicon-star-empty"></span> News</a>
+    <a id="js-scroll-trigger" class="uk-button uk-button-default" href="#about" uk-scroll><span class="glyphicon glyphicon-user"></span>About Me</a>
+    <a id="js-scroll-trigger" class="uk-button uk-button-primary" href="#news" uk-scroll><span class="glyphicon glyphicon-star-empty"></span>News</a>
+
   </div>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-<!-- スライドさせる画像の設定 -->
-<div class="carousel-inner" role="listbox">
-  <div class="item active">
-    <img src="../../images/tai.JPG" alt="第1スライド"　width="10" height="20">
-  </div><!-- /.item -->
-  <div class="item">
-    <img src="../../images/NYCver2.jpg" alt="第2スライド"　width="10" height="20">
-  </div><!-- /.item -->
-  <div class="item">
-    <img src="../../images/irmi.JPG" alt="第3スライド"　width="10" height="20">
-  </div><!-- /.item -->
-</div><!-- /.carousel-inner -->
-　
-<!-- スライドコントロールの設定 -->
-<a class="left carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
- <span class="sr-only">前へ</span>
-</a>
-<a class="right carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
- <span class="sr-only">次へ</span>
-</a>
-</div><!-- /.carousel -->
 
-<div class="container text-center">
-  <div class="alert alert-info text-center" role="alert">
+
+  <div class="alert alert-info text-center" role="alert" style="margin-top:20px;">
     只今準備中
   </div>
-  <hr>
-  <div class="container-fluid" id='about'>
-      <h3><span class="glyphicon glyphicon-user"></span>  ABOUT ME </h3>
-      <p>はじめまして． 現在大学で機械学習について学んでいます． 機械学習の中でも 主に時系列データの分類や自然言語処理について学んでいます．
-<br>日々学んだことや書き記したいことをまとめていきます．</p>
-    </div>
+</div>
+  <div class="uk-section uk-section-large uk-section-muted" id='about' style="background: #AAD6EC;">
+    <div class="uk-container">
 
-    <div class="container-fluid" id='about'>
-      <h3><span class="glyphicon glyphicon-ok-circle"></span> MY SKILLS</h3>
-      <p>只今調整中</p>
+        <h2><span uk-icon="user"></span>  ABOUT ME </h2>
+
+        <div class="uk-grid-match uk-child-width-auto@m" uk-grid>
+            <div>
+              <p>はじめまして． 現在大学で機械学習について学んでいます． 機械学習の中でも 主に時系列データの分類や自然言語処理について学んでいます．
+        <br>日々学んだことや書き記したいことをまとめていきます．</p>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> NEWS</h3>
-      <div style="height:150px;overflow:auto;background:#fff">
-        <h4 id="news1">News</h4>
-        <p>2020年2月12日　ブログを開設しました</p>
-        <h4 id="news2">News</h4>
-        <p>2020年2月10日　Webの勉強をはじめました</p>
-        <h4 id="news2">Event</h4>
-        <p>2020年1月1日　あけましておめでとうございます．<br>今年もよろしくおねがいします．</p>
-        <h4 id="news2">Event</h4>
-        <p>2019年12月25日　メリークリスマス</p>
+  </div>
+<div class="uk-section uk-section-large uk-section-default" id='about' style="background: #EEF9FF;">
+  <div class="uk-container">
+      <h2><span uk-icon="star"></span> MY SKILLS</h2>
+      <div class="uk-grid-match uk-child-width-auto@m" uk-grid>
+          <div>
+            <p>只今調整中</p>
+          </div>
       </div>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    まだまだ準備中なのでのんびり頑張っていきます
   </div>
 </div>
+
+<div class="uk-section uk-section-large uk-section-default" id='news' style="background-color: #FFF">
+  <div class="uk-container">
+  <h2><span uk-icon="info"></span> NEWS</h2>
+    <div style="height:300px;overflow:auto;background:#FFF">
+        <dl class="uk-description-list uk-description-list-divider">
+      <dt>News<br>2020年2月12日　</dt>
+      <dd><a class="uk-link-text" href="/0213">ブログを開設しました</a></dd>
+      <dt>News<br>2020年2月10日　</dt>
+      <dd>Webの勉強をはじめました</a></dd>
+      <dt>Event<br>2020年1月1日　</dt>
+      <dd>あけましておめでとうございます．<br>今年もよろしくおねがいします．</dd>
+      <dt>Event<br>2019年12月25日</dt>
+      <dd>メリークリスマス</dd>
+      </dl>
+    </div>
+  </div> <!-- row -->
+</div>
+
+
+
+
+  <div class="uk-tile uk-tile-primary uk-padding-small">
+    <p class="uk-h4" style="color:#000000" id='gallery'>Gallery</p>
+  </div>
+
+  <div uk-slideshow="min-height: 300; max-height: 800;animation: fade; autoplay: true">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="../../images/tai.JPG" alt="" uk-cover>
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Tailand</h3>
+                <p class="uk-margin-remove">Wat Pacunam</p>
+            </div>
+            </li>
+            <li>
+                <img src="../../images/baseball.jpg" alt="" uk-cover>
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">New York</h3>
+                <p class="uk-margin-remove">City Stadium</p>
+            </div>
+            </li>
+            <li>
+                <img src="../../images/irmi.JPG" alt="" uk-cover>
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Tokyo</h3>
+                <p class="uk-margin-remove">Yomiuri Land</p>
+            </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+   <div class="alert alert-info text-center" role="alert">
+    まだまだ準備中なのでのんびり頑張っていきます
+    <a href="#" uk-totop uk-scroll style="width:auto">ページトップ</a>
+  </div>
+
 
 
 </body>
