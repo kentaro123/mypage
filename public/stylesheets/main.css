@@ -1,23 +1,23 @@
 .jumbotron {
-  background: url('../../../../images/NYC.jpg');
+  background: url('../../../../images/NYC.JPG');
   background-size:  cover;
   background-position: center 30%;
   color: #000000;
-  padding-bottom: 80px;
+  padding-bottom: 300px;
   margin: 0;
  }
   .jumbotron .uk-button-primary {
     background: #EEF9FF;
     border-color: #EEF9FF;
     color: #000000;
-    margin: 120px 20px 20px;
+    margin: 40px 20px 20px;
     border-radius: 10px;
    }
    .jumbotron .uk-button-default {
      background: #fff;
      border-color: #fff;
      color: #000000;
-     margin: 120px 20px 20px;
+     margin: 40px 20px 20px;
      border-radius: 10px;
     }
     .jumbotron .uk-button-primary:hover {
@@ -62,4 +62,16 @@
 
 .uk-section p{
   font-size: 20px;
+}
+
+.uk-description-list dt{
+  font-size: 25px;
+}
+
+
+.uk-description-list dd{
+  font-size: 20px;
+}
+.body{
+  background-color: #000000
 }
