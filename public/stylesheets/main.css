@@ -12,6 +12,7 @@
     color: #000000;
     margin: 40px 20px 20px;
     border-radius: 10px;
+    box-shadow: 0.5px 1.5px 0.5px 0.5px rgba(0,0,0,0.6);
    }
    .jumbotron .uk-button-default {
      background: #fff;
@@ -19,6 +20,7 @@
      color: #000000;
      margin: 40px 20px 20px;
      border-radius: 10px;
+     box-shadow: 0.5px 1.5px 0.5px 0.5px rgba(0,0,0,0.6);
     }
     .jumbotron .uk-button-primary:hover {
       background: #AAD6EC; }
@@ -53,7 +55,7 @@
   width: auto;
 }
 .uk-tile-primary{
-  background-color: #EEF9FF;
+  background-color: #AAD6EC;
 }
 
 .p.uk-h4{
@@ -65,13 +67,19 @@
 }
 
 .uk-description-list dt{
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
 .uk-description-list dd{
-  font-size: 20px;
+  font-size: 15px;
 }
 .body{
   background-color: #000000
+}
+
+.uk-link-text {
+  background-color: #FCECEA;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0,0,0,0.6);
+  border-radius: 1px;
 }
